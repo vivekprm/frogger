@@ -69,4 +69,11 @@ function handleObstacles() {
         logsArray[i].update();
         logsArray[i].draw();
     }
+    // Collision with cars
+    for(let i = 0; i < carsArray.length; i++) {
+        if(collision(frogger, carsArray[i])) {
+            ctx4.drawImage(collisions, 0, 100, 100, 100, frogger.x, frogger.y, 50, 50);
+            resetGame();
+        }
+    }
 }
