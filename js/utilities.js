@@ -12,6 +12,7 @@ function animate() {
     frogger.update();
     ctx4.drawImage(grass, 0, 0, canvas.width, canvas.height);
     handleObstacles();
+    handleScoreBoard();
     requestAnimationFrame(animate);
 }
 animate();
@@ -38,3 +39,15 @@ function scored() {
     frogger.x = canvas.width/2 - frogger.width/2;
     frogger.y = canvas.height - frogger.height - 40;
 } 
+
+function handleScoreBoard() {
+    ctx4.fillStyle = 'black';
+    ctx4.strokeStyle = 'black';
+    ctx4.font = '15px Verdana';
+    ctx4.strokeText('Score', 265, 15);
+    ctx4.font = '60px Verdana';
+    ctx4.fillText(score, 270, 65);
+    ctx4.font = '15px Verdana';
+    ctx4.strokeText('Collisions: ' + collisionCount, 10, 175);
+    ctx4.strokeText('Gamespeed: ' + gameSpeed.toFixed(1), 10, 195); 
+}
