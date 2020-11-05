@@ -37,3 +37,7 @@ const ripplesArray = [];
 const carsArray = [];
 // Things floating in river
 const logsArray = [];
+
+// Images
+const background_lvl2 = new Image();
+background_lvl2.src = 'images/background_lvl2.png';

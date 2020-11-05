@@ -39,6 +39,10 @@ class Frogger {
                 this.moving = true
             }
         }
+        // When player escapes canvas
+        if(this.y < 0){
+            scored();
+        }
     }
     draw() {
         ctx3.fillStyle = 'green';
