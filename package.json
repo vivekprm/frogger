@@ -1,0 +1,14 @@
+{
+  "name": "frogger",
+  "version": "1.0.0",
+  "description": "Frog crossing the road.",
+  "scripts": {
+    "lite": "lite-server --port 10000",
+    "start": "npm run lite"
+  },
+  "author": "Vivek Mishra",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
